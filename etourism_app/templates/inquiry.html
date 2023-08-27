@@ -1,0 +1,264 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+
+<head>
+	<title>E- Tourism With Safe Covid Measures | Contact Us</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Villas Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href=" {% static 'css/bootstrap.css' %} ">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href=" {% static 'css/style.css' %} " type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href=" {% static 'css/font-awesome.min.css' %} " rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href=" {% static '//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i' %} " rel="stylesheet">
+	<link href=" {% static '//fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin-ext' %} " rel="stylesheet">
+	<!-- //Web-Fonts -->
+</head>
+
+<body>
+	<!-- main banner -->
+	<div class="main-top" id="home">
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
+					<!-- logo -->
+					<div id="logo">
+						<h1><a href=" {% url 'index.html' %} ">E-Tourism</a><i class="fas fa-map-marked-alt"></i></h1>
+					</div>
+					<!-- //logo -->
+					<!-- nav -->
+					<div class="nav_w3ls">
+						<nav>
+							<label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu">
+								<li><a href=" {% url 'index.html' %} " class="active">Home</a></li>
+								{% if request.session.log_id %}
+												<li><a href="/logout">Logout</a></li>
+								{% else %}
+
+								<li><a href=" {% url 'login.html' %} ">Login</a></li>
+								<li><a href=" {% url 'index1.html' %} ">SignUp</a></li>
+								{% endif %}
+								<li><a href="https://gujcovid19.gujarat.gov.in/" target="_blank"/>Latest Covid Cases</a></li>
+								<li><a href=" {% url 'Package.html' %} ">Packages</a></li>
+								<li>
+									<!-- First Tier Drop Down -->
+									<label for="drop-2" class="toggle toogle-2">Services <span class="fa fa-angle-down" aria-hidden="true"></span>
+									</label>
+									<a href="#">Services <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<input type="checkbox" id="drop-2" />
+									<ul>
+										<li><a href=" {% url 'about.html' %} ">About Us</a></li>
+										<li><a href=" {% url 'gallery.html' %} " class="drop-text">Gallery</a></li>
+										<li><a href=" {% url 'contact.html' %} ">Contact Us</a></li>
+										<li><a href=" {% url 'inquiry.html' %} " class="drop-text">Inquiry</a></li>
+										<li><a href=" {% url 'index.html' %} " class="drop-text">Blog</a></li>
+										<li><a href=" {% url 'book.html' %} " class="drop-text">Booking Form</a></li>
+									</ul>
+								</li>
+
+
+							</ul>
+						</nav>
+					</div>
+					<!-- //nav -->
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- banner -->
+		<div class="banner_w3lspvt-2">
+
+		</div>
+		<!-- //banner -->
+	</div>
+	<!-- //main banner -->
+
+	<!-- page details -->
+	<div class="breadcrumb-mobamu">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href=" {% url 'index.html' %} ">Home</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">Inquiry</li>
+		</ol>
+	</div>
+	<!-- //page details -->
+
+	<!-- contact -->
+
+	<section class="contact py-5" id="contact">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="tittle text-center text-bl font-weight-bold">Inquiry</h3>
+			<p class="sub-tittle text-center mt-2 mb-sm-5 mb-4 pb-xl-3">Do you have any query?<br>contact us by your e-mail and name...</p>
+			<ul class="list-unstyled row text-left pt-4 mb-lg-5">
+				<li class="col-lg-4 adress-info mb-lg-0 mb-5">
+					<div class="row">
+						<div class="col-3 text-lg-center text-sm-right text-center adress-icon">
+							<span class="fa fa-map-marker"></span>
+						</div>
+						<div class="col-9 text-left">
+							<h6>Location</h6>
+							<p>Gujarat</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-lg-4 adress-info mb-lg-0 mb-5">
+					<div class="row">
+						<div class="col-3 text-lg-center text-sm-right text-center adress-icon">
+							<span class="fa fa-envelope-open-o"></span>
+						</div>
+						<div class="col-9 text-left">
+							<h6>Email</h6>
+							<a href="mailto:etourismm@gmail.com">etourismm@gmail.com</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-lg-4 adress-info mb-lg-0 mb-5">
+					<div class="row">
+						<div class="col-3 text-lg-center text-sm-right text-center adress-icon">
+							<span class="fa fa-phone"></span>
+						</div>
+						<div class="col-9 text-left">
+							<h6>Phone Number</h6>
+							<p>+91 1234567890</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="contact-form mx-auto text-left mt-lg-5 mt-4">
+				<form name="contactform" id="contactform1" method="post" action="{% url 'inquiry.html' %}">
+				{% csrf_token %}
+					<div class="row">
+						<div class="col-lg-4 con-gd">
+							<div class="form-group" data-aos="fade-up">
+								<label>Name *</label>
+								<input type="text" class="form-control" id="name" placeholder="" name="name" required="">
+							</div>
+						</div>
+						
+						<div class="col-lg-4 con-gd">
+							<div class="form-group" data-aos="fade-up">
+								<label>Phone No. *</label>
+								<input type="text" class="form-control" id="phone" placeholder="" name="phone" required="">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="form-group mb-5">
+						<label>How can we help?</label>
+						<textarea name="issues" class="form-control" id="iq" placeholder="" required=""></textarea>
+					</div>
+					<div class="contact-page">
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- //contact -->
+
+	<!-- footer -->
+	<footer class="py-5">
+		<div class="container pt-xl-4">
+			<div class="row footer-top">
+				<div class="col-lg-4 col-md-6 footer-grid_section_1its">
+					<h2 class="logo-2 mb-lg-4 mb-3">
+						<a href=" {% url 'index.html' %} " class="text-uppercase text-wh">E-Tourism</a>
+					</h2>
+					<!-- Map -->
+					<div class="map-fo">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777127.013223454!2d69.07412037446112!3d22.406409439641077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1637121537326!5m2!1sen!2sin" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<!-- //Map -->
+				</div>
+				<div class="col-lg-2 col-md-6 footer-grid_section_1its mt-md-0 mt-4">
+					<h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Links</h3>
+					<ul class="list-unstyled">
+						<li class="mb-3">
+							<a href=" {% url 'index.html' %} ">Home</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'about.html' %} ">About Us</a>
+						</li>
+
+						<li class="mb-3">
+							<a href=" {% url 'gallery.html' %} ">Gallery</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'index.html' %} ">Services</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'contact.html' %} ">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-4">
+					<h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Contact Info</h3>
+					<div class="contact-info">
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Phone</h4>
+							<p>1234567890</p>
+						</div>
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Email </h4>
+							<p><a href="mailto:etourismm@gmail.com">etourismm@gmail.com</a></p>
+						</div>
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Location</h4>
+							<p>Ahmedabad, Gujarat</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-4">
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<!-- copyright -->
+	<div class="cpy-right text-center py-3">
+		<p>© 2021 E Tourism. All rights reserved | Design by
+			<a href="http://w3layouts.com"> W3layouts.</a>
+		</p>
+	</div>
+	<!-- //copyright -->
+
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center"></a>
+	<!-- //move top icon -->
+
+</body>
+
+</html>

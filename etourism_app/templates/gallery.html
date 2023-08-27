@@ -1,0 +1,396 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+	<title>E- Tourism With Safe Covid Measures | Gallery</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Villas Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href=" {% static 'css/bootstrap.css' %} ">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href=" {% static 'css/style.css' %} " type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href=" {% static 'css/font-awesome.min.css' %} " rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href=" {% static '//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i' %} " rel="stylesheet">
+	<link href=" {% static '//fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin-ext' %} " rel="stylesheet">
+	<!-- //Web-Fonts -->
+</head>
+
+<body>
+	<!-- main banner -->
+	<div class="main-top" id="home">
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
+					<!-- logo -->
+					<div id="logo">
+						<h1><a href=" {% url 'index.html' %} ">E-Tourism</a></h1>
+					</div>
+					<!-- //logo -->
+					<!-- nav -->
+					<div class="nav_w3ls">
+						<nav>
+							<label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu">
+								<li><a href=" {% url 'index.html' %} " class="active">Home</a></li>
+								{% if request.session.log_id %}
+												<li><a href="/logout">Logout</a></li>
+								{% else %}
+
+								<li><a href=" {% url 'login.html' %} ">Login</a></li>
+								<li><a href=" {% url 'index1.html' %} ">SignUp</a></li>
+								{% endif %}
+								<li><a href="https://gujcovid19.gujarat.gov.in/" target="_blank"/>Latest Covid Cases</a></li>
+								<li><a href=" {% url 'Package.html' %} ">Packages</a></li>
+								<li>
+									<!-- First Tier Drop Down -->
+									<label for="drop-2" class="toggle toogle-2">Services <span class="fa fa-angle-down" aria-hidden="true"></span>
+									</label>
+									<a href="#">Services <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<input type="checkbox" id="drop-2" />
+									<ul>
+										<li><a href=" {% url 'about.html' %} ">About Us</a></li>
+										<li><a href=" {% url 'gallery.html' %} " class="drop-text">Gallery</a></li>
+										<li><a href=" {% url 'contact.html' %} ">Contact Us</a></li>
+										<li><a href=" {% url 'inquiry.html' %} " class="drop-text">Inquiry</a></li>
+										<li><a href=" {% url 'index.html' %} " class="drop-text">Blog</a></li>
+									</ul>
+								</li>
+
+
+							</ul>
+						</nav>
+					</div>
+					<!-- //nav -->
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- banner -->
+		<div class="banner_w3lspvt-2">
+
+		</div>
+		<!-- //banner -->
+	</div>
+	<!-- //main banner -->
+
+	<!-- page details -->
+	<div class="breadcrumb-mobamu">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href=" {% url 'index.html' %} ">Home</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">Gallery</li>
+		</ol>
+	</div>
+	<!-- //page details -->
+
+	<!-- Gallery -->
+	<section class="gallery py-5" id="gallery">
+		<div class="container py-md-5">
+			<h3 class="tittle text-center font-weight-bold">Our Gallery</h3>
+			<p class="sub-tittle text-center mt-2 mb-sm-5 mb-4 pb-xl-3"></p>
+			<div class="row news-grids no-gutters text-center">
+				<div class="col-md-4 gal-img">
+					<a href="#gal1"><img src=" {% static 'images/science city.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal2"><img src=" {% static 'images/Gandhinagar.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal3"><img src=" {% static 'images/Dwarka.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal4"><img src=" {% static 'images/Vadodra.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				
+				
+				<div class="col-md-4 gal-img">
+					<a href="#gal5"><img src=" {% static 'images/Gir.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal6"><img src=" {% static 'images/Palitana.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal7"><img src=" {% static 'images/Patan.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal8"><img src=" {% static 'images/Surat.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal9"><img src=" {% static 'images/Diu-Daman.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="100"></a>
+				</div>
+				<div class="col-md-4 gal-img"></div>
+				
+				<div class="col-md-4 gal-img">
+					<a href="#gal10"><img src=" {% static 'images/kutch.jpg' %} " alt="Gallery Image" class="img-fluid" width="325" height="150"></a>
+				</div>
+				<center>
+				<div class="col-md-4 gal-img">
+					
+				</div>
+				</center>
+			</div>
+		</div>
+	</section>
+	<!-- gallery popups -->
+	<!-- popup-->
+	<div id="gal1" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/science city.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Science city<span class="sub-tittle-team">Ahmedabad</span> </h3>
+			<p class="mt-3">"Manchester of the East"
+Ahmedabad Tourism
+A rapidly growing metropolis, an industrial hub, an educational hotspot, and a city with a magnificent past – Ahmedabad is one of the most important cities in Gujarat. Located on the banks of the Sabarmati River, Ahmedabad is the former capital of Gujarat, and its delicious food, colourful culture is making it a fast-growing tourist destination. The historic city of Ahmedabad or the old part of the city was declared as the UNESCO World Heritage Site.
+
+Science City is an ambitious initiative of the government of Gujarat to trigger an inquiry of science in the mind of a common citizen with the aid of entertainment and experiential knowledge. Covering an area of more than 107 hectares, the idea is to create imaginative exhibits, virtual reality activity corners, and live demonstrations in an easily understandable manner.
+
+Currently the 3D Imax theater, musical dancing fountain, energy park and simulation rides interest visitors. It is hoped that as this place develops, the investment helps to create awareness and sensitivity to better care for our ecology and people through the appropriate use of science and technology. The park is open from 12-9pm. For more information see Science City or call 079-65220111
+
+</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal2" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Gandhinagar.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Gandhinagar<span class="sub-tittle-team">Gandhinagar</span> </h3>
+			<p class="mt-3">Gandhinagar Tourism
+Gandhinagar, the capital city of Gujarat, is located at a distance of around 23 km from Ahmedabad on the western bank of Sabarmati river. Gandhinagar, one of India's few planned cities encompasses Akshardham Temple, one of the country's most beautiful temple.  
+
+Gandhinagar offers a rich cultural heritage, beautiful temples and serene environment to all its visitors. Among other attractions are an enthralling Children's Park and uniquely built stepwell. The holy places in Gandhinagar like the Hanumanji Temple and the Brahmani Temple which in spite of not being so famous, are also worth visiting for an enriching experience.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal3" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Dwarka.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Dwarka <span class="sub-tittle-team">Dwarka</span> </h3>
+			<p class="mt-3">The home of Lord Krishna"
+Dwarka Tourism
+Located on the western tip of the Saurashtra peninsula in Gujarat, Dwarka is believed to be the capital city of Lord Krishna's kingdom. Known as Devbhoomi Dwarka, Dwarka boasts of being the only city that is a part of both Char Dham (four principal holy places) and also Sapta Puris (seven sacred cities) mentioned in the Hindu religion. Dwarka was a part of the ancient kingdom of Krishna and Nageshwar Jyotirlinga Temple, one of the 12 Jyotirlingas, is also located in Dwarka. The beachside and the seashores are an added tourist attraction.
+
+Legend has it that the city was once engulfed by the sea and recent excavations reveal that a city did exist here. The name Dwarka translates to dwar meaning 'door' and ka meaning 'moksha' meaning the ‘door to salvation.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup3 -->
+	<!-- popup-->
+	<div id="gal4" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Vadodra.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Vadodra <span class="sub-tittle-team">Vadodra</span> </h3>
+			<p class="mt-3">Vadodara Tourism
+Vadodara or Baroda is a cosmopolitan city located in Gujarat. Home to some of the most exemplary displays of architecture, Vadodara is a fitting memorial to Maratha leader Sayaji Rao Gaekwad III who had envisioned a dream to make this Big City an educational, industrial and commercial centre.
+
+Known for one of the most lavish palaces in India- the Lakshmi Vilas Palace and plenty more legendary monuments, Vadodara is the cultural capital of Gujarat. With a prominent part of it being occupied by the Gujaratis, this place is the most sought after during the nine days of the Navratri festival. No city in India celebrates the festival of Navratri with as much zeal and exuberance as Vadodara does. It houses one of the premier universities of India- the Maharaja Sayajirao University.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup --><!-- popup-->
+	<div id="gal5" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Gir.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Uperkot <span class="sub-tittle-team">Saurashtra</span> </h3>
+			<p class="mt-3">Uperkot is the upper citadel located in the east of Junagadh. Over 2300 years old, with walls up to 20m high in some places, there used to be a 300 ft. deep moat inside the walls which reportedly used to be inhabited by crocodiles for the fort's protection.
+Neelam and Manek, forged in Cairo and brought by the Turks are the two major tourist attractions in the fort. Also, see the stepwells and caves in the fort complex.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal6" class="pop-overlay animate">
+		<div class="popup">
+		<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Palitana.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Palitana <span class="sub-tittle-team">Palitana</span> </h3>
+			<p class="mt-3">A small town located in the Bhavnagar district of Gujarat, Palitana is noted as a popular pilgrimage site among the Jains. Another famous thing about Palitana is that the town strictly follows vegetarianism which makes it the first city in the world to abide by the vegetarian diet legally. It is no surprise that the town has listed selling of animal products (Fish, meat and eggs) or activities that involve the killing of animals to be illegal.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal7" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Patan.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Patan <span class="sub-tittle-team">Patan</span> </h3>
+			<p class="mt-3">"Rani Ki Vav - UNESCO World Heritage Site"
+Patan Tourism
+Home to Rani Ka Vav, the latest Indian entrant to the list of UNESCO World Heritage Site, Patan is a treasure trove of architectural gems and ancient temples that has a history dating back to the medieval period. Situated in Gujarat, this place is located at the banks of what are the remains of ancient Saraswati river.
+
+Having been the capital of the state for as many as 650 years in the medieval period, Patan has a lot of historical value and has been a part of the research of archaeologists in the past. Just as it has temples, it also has Dargah and Jain temples. Patan is a spiritual city and strongly believes that it is their Kuldevi and her presence that has kept the town intact and its people happy and growing.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal8" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Surat.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Surat<span class="sub-tittle-team">Surat</span> </h3>
+			<p class="mt-3">"Diamond City of India"
+Surat Tourism
+Surat, having its name associated with Saurashtra (the good land), is a port city in Gujarat. The second most populated city in the state, Surat is a global diamond cutting centre and a commercial hub of textiles. Known as 'the city of flyovers', it attracts tourists who are interested in the colonial history of the region and the exotic wildlife.
+Packed on the south bank of a sharp bend in the Tapi River (Tapti), Surat is located 306 km south of the state capital, Gandhinagar. Once known for silk-weaving, it emerged as a major textile and diamond hub of India, with the shops in the New Textile Market area often crowded with buyers and shoppers. Prominent tourist attractions in Surat are the Surat Castle, Science Centre Complex and the Diamond Gallery among others.
+
+Having the reputation of being light-hearted, easy-going, and fun-loving, with a passion for food, Surat is an absolutely great place for a family vacation.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal9" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/Diu-Daman.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Diu-Daman <span class="sub-tittle-team">Diu-Daman</span> </h3>
+			<p class="mt-3">"A mini-Goa"
+Diu Tourism
+Located near the port of Veraval, Diu is a small island which was earlier a Portuguese colony and is now guarded by beaches all around. Diu takes up most popularity given the ample number of beaches, along with Gujarat's southern coast such as the Nagoa beach, but has a lot more to offer too. Alcohol is legal in Diu
+
+The Diu Fort, a primary imprint of the Portuguese on the area's heritage and architecture makes up a popular tourist attraction. Another interesting place is the Vanakbara, a small fishing village whose charm has tints of colourful fishing boats and humming of day to day activity. This perfect add-on to a visit to Gujarat will complete your experience with interesting museums such as the Sea Shell Museum, temples and churches.</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal10" class="pop-overlay animate">
+		<div class="popup">
+			<div style= "height: 400px; overflow-y: scroll;">
+			<img src=" {% static 'images/kutch.jpg' %} " alt="Popup Image" class="img-fluid" />
+			<h3>Kutch <span class="sub-tittle-team">Kutch</span> </h3>
+			<p class="mt-3">"The White Desert of India"
+Kutch Tourism
+Virtually an island that resembles the shape of a tortoise, Kutch is an erstwhile princely state of India holding onto its grandeur nature from the past. Kutch is probably one of the most beautiful, yet surreal places in India with the vast expanses of the white salt desert.  The place comes to life during the winters when the Rann Festival is held during December-February everywhere in which there are huge camp settlements with cultural programs, functions and adventure activities like hot-air ballooning. 
+
+Kutch is also among the largest district of India with a terribly low population density. Also, Kutch lies on the India-Pakistan border and you can see parts of Pakistan from Kutch. Kutch is also famous for crafts and embroidery works, Flamingo Sanctuary and Wild Ass Sanctuary. Bhuj is an ideal starting point to visit the Rann of Kutch. Beautiful beaches of Mandvi near Bhuj are also totally worth visiting during your trip to Kutch. Don't miss to see the ancient town of Dholavira.
+
+</p>
+			<a class="close" href=" {% url 'gallery.html' %} ">&times;</a>
+		</div>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- //gallery popups -->
+	<!-- //gallery -->
+
+	<!-- footer -->
+	<footer class="py-5">
+		<div class="container pt-xl-4">
+			<div class="row footer-top">
+				<div class="col-lg-4 col-md-6 footer-grid_section_1its">
+					<h2 class="logo-2 mb-lg-4 mb-3">
+						<a href=" {% url 'index.html' %} " class="text-uppercase text-wh">E-Tourism</a>
+					</h2>
+					<!-- Map -->
+					<div class="map-fo">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777127.013223454!2d69.07412037446112!3d22.406409439641077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1637121537326!5m2!1sen!2sin" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<!-- //Map -->
+				</div>
+				<div class="col-lg-2 col-md-6 footer-grid_section_1its mt-md-0 mt-4">
+					<h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Links</h3>
+					<ul class="list-unstyled">
+						<li class="mb-3">
+							<a href=" {% url 'index.html' %} ">Home</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'about.html' %} ">About Us</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'gallery.html' %} ">Gallery</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'index.html' %} ">Services</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'contact.html' %} ">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-4">
+					<h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Contact Info</h3>
+					<div class="contact-info">
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Phone</h4>
+							<p>1234567890</p>
+						</div>
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Email </h4>
+							<p><a href="mailto:etourismm@gmail.com">etourismm@gmail.com</a></p>
+						</div>
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Location</h4>
+							<p>Ahmedabad, Gujarat</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-4">
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<!-- copyright -->
+	<div class="cpy-right text-center py-3">
+		<p>© 2021 E Tourism. All rights reserved | Design by
+			<a href="http://w3layouts.com"> W3layouts.</a>
+		</p>
+	</div>
+	<!-- //copyright -->
+
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center"></a>
+	<!-- //move top icon -->
+
+</body>
+
+</html>

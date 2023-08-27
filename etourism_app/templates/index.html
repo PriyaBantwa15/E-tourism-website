@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+	<title>E- Tourism With Safe Covid Measures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Villas Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+
+
+	<link rel="stylesheet" href=" {% static 'css/bootstrap.css' %} ">
+	<link rel="stylesheet" href=" {% static 'css/css_slider.css' %} " type="text/css" media="all">
+	<link rel="stylesheet" href=" {% static 'css/style.css' %} " type="text/css" media="all" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link href=" {% static 'css/font-awesome.min.css' %} " rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href=" {% static '//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i' %} " rel="stylesheet">
+	<link href=" {% static '//fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin-ext' %} " rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="main-top" id="home">
+		<header>
+			<div class="container-fluid">
+				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
+
+					<div id="logo">
+						<h1><a href=" {% url 'index.html' %} ">E-Tourism</a><i class="fas fa-map-marked-alt"></i></h1>
+					</div>
+
+					<div class="nav_w3ls">
+						<nav>
+							<label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu">
+								<li><a href=" {% url 'index.html' %} " class="active">Home</a></li>
+								{% if request.session.log_id %}
+												<li><a href="/logout">Logout</a></li>
+								{% else %}
+
+								<li><a href=" {% url 'login.html' %} ">Login</a></li>
+								<li><a href=" {% url 'index1.html' %} ">SignUp</a></li>
+								{% endif %}
+								<li><a href="https://gujcovid19.gujarat.gov.in/" target="_blank"/>Latest Covid Cases</a></li>
+								<li><a href=" {% url 'Package.html' %} ">Packages</a></li>
+								<li>
+									<!-- First Tier Drop Down -->
+									<label for="drop-2" class="toggle toogle-2">Services <span class="fa fa-angle-down" aria-hidden="true"></span>
+									</label>
+									<a href="#">Services <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<input type="checkbox" id="drop-2" />
+									<ul>
+										<li><a href=" {% url 'about.html' %} ">About Us</a></li>
+										<li><a href=" {% url 'gallery.html' %} " class="drop-text">Gallery</a></li>
+										<li><a href=" {% url 'contact.html' %} ">Contact Us</a></li>
+										<li><a href=" {% url 'inquiry.html' %} " class="drop-text">Inquiry</a></li>
+										<li><a href=" {% url 'index.html' %} " class="drop-text">Blog</a></li>
+									</ul>
+								</li>
+
+
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+				<!-- banner -->
+		<div class="banner_w3lspvt">
+			<div class="csslider infinity" id="slider1">
+				<input type="radio" name="slides" checked="checked" id="slides_1" />
+				<input type="radio" name="slides" id="slides_2" />
+				<input type="radio" name="slides" id="slides_3" />
+				<input type="radio" name="slides" id="slides_4" />
+				<ul class="banner_slide_bg">
+					<li>
+						<div class="container">
+							<div class="w3ls_banner_txt">
+								<p><b>Welcome to Gujarat</b></p>
+								<h3 class="w3ls_pvt-title text-wh text-uppercase let">Best Places</h3>
+								<a href=" {% url 'gallery.html' %} " class="btn button-style mt-sm-5 mt-4">Know More</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="container">
+							<div class="w3ls_banner_txt">
+								<p>Welcome to Gujarat</p>
+								<h3 class="w3ls_pvt-title text-wh text-uppercase let">Enjoy Your Moments</h3>
+								<a href="#enjoy" class="btn button-style mt-sm-5 mt-4">Know More</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="container">
+							<div class="w3ls_banner_txt">
+								<p>Welcome to Gujarat</p>
+								<h3 class="w3ls_pvt-title text-wh text-uppercase let">Modern & Spacious Rooms</h3>
+								<a href="#price" class="btn button-style mt-sm-5 mt-4">Know More</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="container">
+							<div class="w3ls_banner_txt">
+								<p>Welcome to Gujarat</p>
+								<h3 class="w3ls_pvt-title text-wh text-uppercase let">In the Perfect Location</h3>
+								<a href="#blog" class="btn button-style mt-sm-5 mt-4">Know More</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="arrows">
+					<label for="slides_1"></label>
+					<label for="slides_2"></label>
+					<label for="slides_3"></label>
+					<label for="slides_4"></label>
+				</div>
+			</div>
+		</div>
+		<!-- //banner -->
+	</div>
+	<div class="banner-bottom py-5">
+		<div class="d-md-flex container py-xl-3 py-lg-3">
+			<div class="banner-left-bottom-w3ls">
+				<h3 class="text-wh my-3">Welcome to Gujarat</h3>
+				<p>Enjoy Your Every Moments With Your Partner In Gujarat's Resort.<br>Our best hotels will give you a fresh mind.</p>
+			</div>
+			<div class="button offset-lg-2 offset-md-1">
+				<a href=" {% url 'about.html' %} " class="btn w3ls-button-mobamu">Know More</a>
+			</div>
+		</div>
+	</div>
+	<section class="about py-5" id="about">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row py-md-5">
+				<div class="col-lg-4 about-left-w3pvt offset-lg-1 mt-lg-4">
+					<div class="main-img">
+						<img src=" {% static 'images/blog1.jpg' %} " alt="" class="img-fluid pos-aboimg">
+						<img src=" {% static 'images/blog2.jpg' %} " alt="" class="img-fluid pos-aboimg2">
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-7 about-right offset-xl-1">
+					<h4 class="sub-tittle-w3layouts let">About Us</h4>
+					<h3 class="tittle-w3layouts text-uppercase pr-lg-5 mt-2">Travel with E-Tourism</h3>
+					<p class="mt-4 mb-4">“Travel is the main thing you purchase that makes you more extravagant”. We, at our website, swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.</p>
+						<p>We have been moving excellent encounters for a considerable length of time through our cutting-edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.</p>
+					<a href=" {% url 'about.html' %} " class="btn button-style-2 mt-sm-5 mt-4">Know More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="rooms-w3ls bg-li py-5" id="price">
+		<div class="container-fluid py-xl-5 py-lg-3">
+			<h3 class="tittle text-center text-bl font-weight-bold">Rooms & Suites</h3>
+			<p class="sub-tittle text-center mt-2 mb-sm-5 mb-4 pb-xl-3">Deluxe, Beautiful and Luxuries which make you comfortable every time in the best hotels of Gujarat.</p>
+			<div class="row">
+				<div class="col-lg-4 price-mobamus">
+					<div class="price-top">
+						<a href=" {% url 'gallery.html' %} ">
+							<img src=" {% static 'images/price1.jpg' %} " alt="" class="img-fluid" />
+						</a>
+					</div>
+					<div class="price-w3ls-bottom p-4">
+						<h4 class="my-2"><a href=" {% url 'Package.html' %} ">Suite</a></h4>
+						<div class="lm-item-price">
+							<h6>
+								<span class="price-top-head">₹</span>
+								<span class="price-midd-head">1950</span>
+								<span class="price-right-head">/ per week</span>
+							</h6>
+						</div>
+						<ul class="style-lists">
+							<li>Only 5 rooms are available </li>
+							<li>Breakfast included </li>
+							<li>Price does not include services fee </li>
+						</ul>
+						<a href=" {% url 'Package.html' %} " class="btn button-style-2 mt-sm-5 mt-4">Book Now</a>
+					</div>
+				</div>
+				<div class="col-lg-4 price-mobamus my-lg-0 my-5">
+					<div class="price-top">
+						<a href=" {% url 'gallery.html' %} "></a>
+							<img src="  {% static 'images/price2.jpg' %} " alt="" class="img-fluid" />
+						</a>
+					</div>
+					<div class="price-w3ls-bottom p-4">
+						<h4 class="my-2"><a href=" {% url 'gallery.html' %} "> Deluxe Room </a> </h4>
+						<div class="lm-item-price">
+							<h6>
+								<span class="price-top-head">₹</span>
+								<span class="price-midd-head">1200</span>
+								<span class="price-right-head">/ per week</span>
+							</h6>
+						</div>
+						<ul class="style-lists">
+							<li>Perfect for traveling couples </li>
+							<li>Breakfast included </li>
+							<li>Concierge services </li>
+						</ul>
+						<a href=" {% url 'Package.html' %} " class="btn button-style-2 mt-sm-5 mt-4">Book Now</a>
+					</div>
+				</div>
+				<div class="col-lg-4 price-mobamus">
+					<div class="price-top">
+						<a href=" {% url 'gallery.html' %} "></a>
+							<img src= "  {% static 'images/price3.jpg' %} " alt="" class="img-fluid" />
+						</a>
+					</div>
+					<div class="price-w3ls-bottom p-4">
+						<h4 class="my-2"><a href=" {% url 'gallery.html' %} ">Family Room</a></h4>
+						<div class="lm-item-price">
+							<h6>
+								<span class="price-top-head">₹</span>
+								<span class="price-midd-head">1820</span>
+								<span class="price-right-head">/ per week</span>
+							</h6>
+						</div>
+						<ul class="style-lists">
+							<li>Two double beds </li>
+							<li>Babysitting facilities</li>
+							<li>1 free bed available on request</li>
+						</ul>
+						<a href=" {% url 'Package.html' %} " class="btn button-style-2 mt-sm-5 mt-4">Book Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //price -->
+
+	<!-- why -->
+	<div class="serives py-5" id="why">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="tittle text-center text-bl font-weight-bold">Why E-Tourism </h3>
+			<p class="sub-tittle text-center mt-2 mb-sm-5 mb-4 pb-xl-3">To give the best travel experiences of various beautiful places in Gujarat. The culture of gujarat is its beautifulness... </p>
+			<div class="row text-center">
+				<div class="col-lg-3 col-md-6 ser-grid mt-md-0 mt-5">
+					<span class="material-icons">travel_explore</span>
+					<h4>Best Places</h4>
+					<p>Best places of gujarat to vist.</p>
+				</div>
+				<div class="col-lg-3 col-md-6 ser-grid mt-md-0 mt-5">
+					<span class="material-icons">restaurant_menu</span>
+					<h4>Restaurant</h4>
+					<p>Best Restaurant with their best and authentic Gujarati food items.</p>
+				</div>
+				<div class="col-lg-3 col-md-6 ser-grid mt-md-0 mt-5">
+					<h1><span class="fa fa-money"></span></h1>
+					<h4>Low Price</h4>
+					<p>Compare to other websites our price of packages is low.</p>
+				</div>
+				<div class="col-lg-3 col-md-6 ser-grid mt-lg-0 mt-5">
+					<h1><span class="fa fa-user-secret"></span></h1>
+					<h4>Secure Zone</h4>
+					<p>Your data in our website will be secure in all the way.</p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="stats py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row stats-mobamu py-5">
+				<div class="col-lg-4 col-md-6">
+					<div class="stats-grid">
+						<div class="row">
+							<div class="col-4 text-center">
+								<span class="fa fa-star"></span>
+							</div>
+							<div class="col-8">
+								<h4 class="numscroller">6000</h4>
+								<p>Excellent Ratings</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+					<div class="stats-grid">
+						<div class="row">
+							<div class="col-4 text-center">
+								<span class="fa fa-smile-o"></span>
+							</div>
+							<div class="col-8">
+								<h4 class="numscroller">25k</h4>
+								<p>Happy Guests</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mx-lg-0 mx-md-auto mt-lg-0 mt-4">
+					<div class="stats-grid">
+						<div class="row">
+							<div class="col-4 text-center">
+								<span class="fa fa-cutlery"></span>
+							</div>
+							<div class="col-8">
+								<h4 class="numscroller">150</h4>
+								<p>Food Items</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="blog-w3ls py-5" id="blog">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="tittle text-center text-bl font-weight-bold">Accommodation</h3>
+
+			<div class="row package-grids">
+				<div class="col-lg-4 posts-mobamus">
+					<div class="posts-top">
+						<a href=" {% url 'gallery.html' %} " >
+							<img src= " {% static 'images/kutch1.jpg' %} " alt="" class="img-fluid" width="325" height="140" />
+						</a>
+					</div>
+					<div class="posts-w3ls-bottom py-4">
+						<h4 class="mb-2"><a href=" {% static 'gallery.html' %} ">Kutch</a></h4>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<span class="fa fa-thumbs-up mr-1"></span>20 Likes</a>
+							</li>
+							<li class="mx-3">
+								<a href="#">
+									<span class="fa fa-comments mr-1"></span>48 Comments</a>
+							</li>
+						</ul>
+						<p class="mt-3">Kutch is also famous for crafts and embroidery works, Flamingo Sanctuary and Wild Ass Sanctuary. Bhuj is an ideal starting point to visit the Rann of Kutch. Beautiful beaches of Mandvi near Bhuj are also totally worth visiting during your trip to Kutch. Don't miss to see the ancient town of Dholavira.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 posts-mobamus my-lg-0 my-4">
+					<div class="posts-top">
+						<a href=" {% url 'gallery.html' %}">
+							 <img src= " {% static 'images/gir1.jpg' %} " alt="" class="img-fluid" width="325" height="140" />
+						</a>
+
+					</div>
+					<div class="posts-w3ls-bottom py-4">
+						<h4 class="mb-2"><a href=" {% url 'gallery.html' %} ">Sasan Gir</a></h4>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<span class="fa fa-thumbs-up mr-1"></span>40 Likes</a>
+							</li>
+							<li class="mx-3">
+								<a href="#">
+									<span class="fa fa-comments mr-1"></span>48 Comments</a>
+							</li>
+						</ul>
+						<p class="mt-3">Gir National Park and Wildlife Sanctuary is the only remaining home for the Asiatic Lions. Located in Talala Gir in Gujarat, the Sanctuary is a part of Kathiawar- Gir dry deciduous forests ecoregion. Gir National Park is closed from 16 June to 15 October every year and the best time for wildlife spotting is April and May.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 posts-mobamus">
+					<div class="posts-top">
+						<a href=" {% url 'gallery.html' %} ">
+							<img src=" {% static 'images/patan1.jpg' %} " alt="" class="img-fluid" width="325" height="150" />
+						</a>
+
+					</div>
+					<div class="posts-w3ls-bottom py-4">
+						<h4 class="mb-2"><a href=" {% url 'gallery.html' %} ">Patan</a></h4>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<span class="fa fa-thumbs-up mr-1"></span>50 Likes</a>
+							</li>
+							<li class="mx-3">
+								<a href="#">
+									<span class="fa fa-comments mr-1"></span>42 Comments</a>
+							</li>
+						</ul>
+						<p class="mt-3">Having been the capital of the state for as many as 650 years in the medieval period, Patan has a lot of historical value and has been a part of the research of archaeologists in the past. Just as it has temples, it also has Dargah and Jain temples. Patan is a spiritual city and strongly believes that it is their Kuldevi and her presence that has kept the town intact and its people happy and growing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="middle py-5" id="enjoy">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="welcome-left text-center py-md-5 py-3">
+				<h3>Enjoy Your Every Moments With Your Partner In Gujarat's Paradise Resort</h3>
+				<a href=" {% url 'book.html' %} " class="btn button-style button-style mt-sm-5 mt-4">Book Now</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="py-5">
+		<div class="container pt-xl-4">
+			<div class="row footer-top">
+				<div class="col-lg-4 col-md-6 footer-grid_section_1its">
+					<h2 class="logo-2 mb-lg-4 mb-3">
+						<a href=" {% url 'index.html' %} " class="text-uppercase text-wh">E-Tourism</a>
+					</h2>
+					<!-- Map -->
+					<div class="map-fo">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777127.013223454!2d69.07412037446112!3d22.406409439641077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1637121537326!5m2!1sen!2sin" width="300" height="150" style="border:0;" allowfullscreen="" loading="fast"></iframe>
+					</div>
+					<!-- //Map -->
+				</div>
+				<div class="col-lg-2 col-md-6 footer-grid_section_1its mt-md-0 mt-4">
+					<h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Links</h3>
+					<ul class="list-unstyled">
+						<li class="mb-3">
+							<a href=" {% url 'index.html' %} ">Home</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'about.html' %} ">About Us</a>
+						</li>
+
+						<li class="mb-3">
+							<a href=" {% url 'gallery.html' %} ">Gallery</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'index.html' %} ">Services</a>
+						</li>
+						<li class="mb-3">
+							<a href=" {% url 'contact.html' %} ">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-4">
+					<h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Contact Info</h3>
+					<div class="contact-info">
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Phone</h4>
+							<p>1234567890</p>
+						</div>
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Email </h4>
+							<p><a href="mailto:etourismm@gmail.com">etourismm@gmail.com</a></p>
+						</div>
+						<div class="footer-style-w3ls mb-4">
+							<h4 class="text-li mb-2">Location</h4>
+							<p>Ahmedabad, Gujarat</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-4">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="cpy-right text-center py-3">
+		<p>© 2021 E Tourism. All rights reserved | Design by
+			<a href="http://w3layouts.com"> W3layouts.</a>
+		</p>
+	</div>
+	<a href="#home" class="move-top text-center"></a>
+</body>
+</html>

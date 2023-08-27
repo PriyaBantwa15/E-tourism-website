@@ -1,0 +1,113 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+
+<head>
+	<title>E- Tourism With Safe Covid Measures | Sign Up</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords"
+		content="Invent Signup Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+	<!--/Style-CSS -->
+	<link rel="stylesheet" href=" {% static 'signup/css/style.css' %} " type="text/css" media="all" />
+	
+	<!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href=" {% static 'signup/newcss/css/style.css' %} " type="text/css" media="all" />
+
+    <!-- fontawesome v5 -->
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+	<!--//Style-CSS -->
+</head>
+
+<body>
+	<!-- /login-section -->
+	<section class="w3l-login-6">
+		<div class="login-hny">
+			<div class="form-content">
+				<div class="form-right">
+					<div class="overlay">
+						<div class="grid-info-form">
+						<h1><a href=" {% url 'index.html' %} " style="color:White;align:left">E-Tourism Signup Form</a></h1>
+
+						</div>
+					
+					</div>
+				</div>
+				<div class="form-left">
+					<div class="middle">
+						
+					</div>
+					<div class="register">
+                    <span class="fas fa-user-circle"></span>
+                    <strong>Create account!</strong>
+                    <form action="{% url 'add' %}" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+                        <fieldset>
+                            <div class="form">
+                                
+                                <div class="form-row">
+                                    <span class="fas fa-envelope"></span>
+                                    <label class="form-label" for="input">E-mail</label>
+                                    <input type="email" name="email_id" placeholder="" required="" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-lock"></span>
+                                    <label class="form-label" for="input">Password</label>
+                                    <input type="password" name="Password" placeholder="" required="" class="form-text">
+                                </div>
+								<div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">Phone Number</label>
+                                    <input type="text" name="phone" placeholder="" required="" class="form-text">
+                                </div>
+                                <div class="form-row button-login">
+                                    <button class="btn btn-login">Create <span
+                                            class="fas fa-arrow-right"></span></button>
+                                </div>
+								
+                            </div>
+                        </fieldset>
+                        </form>
+
+                        <span class="create-account">Or create account using social media!</span>
+
+                        <div class="social-media">
+                            <a href="#facebook" class="fb"><span class="fab fa-facebook"></span></a>
+                            <a href="#twitter" class="tw"><span class="fab fa-twitter"></span></a>
+                            <a href="#pinterest" class="pi"><span class="fab fa-pinterest"></span></a>
+                        </div>
+                </div>
+                <!-- //register -->
+					<div class="cpy-right text-center py-3">
+		<p>© 2021 E Tourism. All rights reserved | Design by
+			<a href="http://w3layouts.com"> W3layouts.</a>
+		</p>
+	</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- //login-section -->
+</body>
+
+</html>

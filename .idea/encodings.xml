@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/etourism_app/static/login/login.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/book.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/contact.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/detail1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/detail2.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/detail3.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/detail4.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/detail5.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/gallery.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/index1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/etourism_app/templates/login.html" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1252" />
+  </component>
+</project>
